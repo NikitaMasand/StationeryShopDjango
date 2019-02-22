@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 class = "header">Products</h1>
+  <div class = "row">
+    {% for product in products %}
+    <div class = "col-md-3">
+        <div class="card bg-info border-warning" style="width: 18rem;">
+            <img class="card-img-top" src="{{ product.image_url }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.price }} Rs. </p>
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+       </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- template tag in django...used to write dyanmic code in html -->
+{% endblock %}
