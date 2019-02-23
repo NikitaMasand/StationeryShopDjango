@@ -6,16 +6,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/products.css' %}">
     <title>Stationery_Shop</title>
   </head>
-  <body class="body_class">
+  <body>
+    <div class = "header">
+      <a href="{% url 'add_new' %}" class="top-menu">+</a>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">Stationery_Shop</a>
     </nav>
+    <h1>Products</h1>
+  </div>
     {% block content %}
     {% endblock %}
 
