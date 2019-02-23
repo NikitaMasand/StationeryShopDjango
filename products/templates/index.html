@@ -1,15 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
+  <div class = "pagetype">
+    Products
+    <span class="products-add-text">
+      Add new product &nbsp;
+    <a href="{% url 'add_new' %}"
+      <span class="products-add-icon">
+        <i class="fas fa-plus-circle"></i>
+      </span>
+    </a>
+    </span>
+  </div>
   <div class = "row">
     {% for product in products %}
     <div class = "col-md-3">
-        <div class="card bg-info border-warning" style="width: 18rem;">
+        <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="{{ product.image_url }}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text">{{ product.price }} Rs. </p>
-                <a href="#" class="btn btn-primary">Add to Cart</a>
+                <p class="card-title">
+                  <span class="card--text">{{ product.name }}</span>
+                  <span class="card--price">Rs. {{ product.price }}</span>
+                </p>
+                <a href="{% url 'shoppingcart' pk=product.pk %}"
+                class="btn btn-primary">
+                Add to Cart</a>
             </div>
        </div>
     </div>

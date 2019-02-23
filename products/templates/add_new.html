@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2>AddNewProduct</h2>
+<h1 class="pagetype">AddNewProduct</h1>
 <form method = "POST" class = "post-form">{% csrf_token %}
-  {{ form.as_p }}
+  {{ form.as_table }}
   <button type = "submit" class = "submit btn btn-default">Save</button>
 </form>
 {% endblock %}

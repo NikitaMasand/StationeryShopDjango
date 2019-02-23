@@ -4,7 +4,7 @@ from .models import Offer
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name','price','stock')
+    list_display = ('name','price')
 
 
 class OfferAdmin(admin.ModelAdmin):

@@ -2,15 +2,15 @@
 # application in django. eg. to store,read ,delete models from database.
 #Thus inheriting this product class from Model class, we won't have to take care for above functions, we've inherited them
 #attributes of a product that we need to know??
-#name,price,stock,image_url
+#name,price,image_url
 
 from django.db import models
+from django.utils import timezone
 
 
 class Product(models.Model):
     name = models.CharField(max_length = 255)
     price = models.FloatField()
-    stock = models.IntegerField()
     image_url = models.CharField(max_length = 2083)
 
 

@@ -1,22 +1,77 @@
 /* .body_class{
   background-color: #D9A3F0;
 } */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .header{
-  background-color: #5C1C79;
-  color : #ffffff;
-  font-family: 'Lobster' cursive;
-  padding: 20px 20px 20px 40px;
-  margin-bottom: 70px
+  background-color: #3e464c;
+  color: #FFF;
+  text-align: center;
+  line-height: 32px;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited{
-  color : #ffffff;
-  float : right;
-  font-size : 26pt;
-  margin-right : 20px;
-  margin-left: 20px;
+.header--text {
+  font-size: 28px;
+  padding-top: 12px;
+  font-weight: 600;
 }
 
-.card{
+.header--sub-heading {
+  font-size: 13px;
+}
+
+.pagetype {
+  font-size: 24px;
+  margin: 15px;
+  font-weight: 600;
+  color: rgb(156, 39, 176);
+}
+
+
+.card {
+  height: 280px;
   margin-bottom: 20px;
+}
+
+.card-body {
+  border-top: 1px solid #EEE;
+}
+
+.card-body a {
+  padding: 3px 10px;
+  font-size: 13px;
+}
+
+.card-title .card--text {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-title .card--price {
+  background: #333;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 12px;
+  float: right;
+}
+
+.card img {
+  height: 180px;
+}
+
+ .products-add-text, .products-add-icon, .products-add-icon:hover,
+ .products-add-icon:visited
+ {
+  float: right;
+  font-size: 15px;
+  color : rgb(156, 39, 176);
+}
+
+.post-form{
+  margin-left: 20px;
 }
