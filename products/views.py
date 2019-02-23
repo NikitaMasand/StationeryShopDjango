@@ -21,8 +21,8 @@ def add_new(request):
     if request.method == "POST":
         form = ProductForm(request.POST)
         if form.is_valid():
-            post = form.save()
-            post.save()
+            product = form.save()
+            product.save()
             return redirect('index')
     else:
         form = ProductForm()
